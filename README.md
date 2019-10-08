@@ -13,8 +13,9 @@ Below is a table of contents for this library, with projects ranked in order of 
 
 ### Computer Networking
 
-1) Class Project: [TCP & SSL Connections](./networking/tcp_ssl_client)
-2) Class Project: [TCP Server/Client Sockets in C](./networking/server_client_sockets)
+1) Class Project: [Webcrawler](./networking/webcrawler)
+2) Class Project: [TCP & SSL Connections](./networking/tcp_ssl_client)
+3) Class Project: [TCP Server/Client Sockets in C](./networking/server_client_sockets)
 
 ### Object-Oriented Design
 
