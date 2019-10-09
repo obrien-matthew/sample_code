@@ -40,7 +40,7 @@ Origially accessible at http://safehaven-data.herokuapp.com/, but our Google API
 
 Our goal was to create a web-based application with a simple map-based user-interface that would map both crime and
 housing data to help a user find an appropriate place to stay in Boston. We planned to provide the user with elementary
-data analysis based on location in order to inform a decision, but focus largely on making the crime data easily understood
+data analysis based on location in order to inform a decision, but focused largely on making the crime data easily understood
 and the housing data readily available in our interface. As of project submission, we have successfully accomplished these
 broad goals. Our interface is straightforward and avoids complexity and ambiguity; our data is visualized simply using
 color-coding and map pins on the Google Maps API; and our data analysis consists of a Top 5 Crime Codes table as well
@@ -66,7 +66,7 @@ as graphs which illustrate the correlation between housing prices and crime rate
 - **AirBnB** :
     1. We downloaded the Airbnb dataset for Boston from InsideAirbnb. This dataset contained individual CSV files
     for both listings and listing availability.
-    2. The listings.csv file contained over 50 columns, so it was important to extract only relevant columns and remove
+    2. The listings.csv file contained over fifty columns, so it was important to extract only relevant columns and remove
     everything else. This process was done manually in Microsoft Excel.
     3. The data was normalized by extracting only the fields that were dependent on the listing and useful for our
     application like price per night, superhost?, location details, rating, etc. A custom MySQL Create script was used
@@ -74,7 +74,7 @@ as graphs which illustrate the correlation between housing prices and crime rate
     
 ## Database Design
 
-Our database uses four datasets (crime, AirBnB listings, and apartment listings from Redfin and apartments.com) to
+Our database uses four datasets (crime, AirBnB listings, apartment listings from Redfin, and apartments.com) to
 help the user find an appropriate place to live. To enhance data compatibility between the crime and AirBnB/apartment
 data, crime latitude/longitude coordinates are mapped to a zip code and stored in a location table referenced by the four
 datasets as a foreign key. The housing datasets already contained zip codes, so they were simply converted to correspond
@@ -113,7 +113,7 @@ used Google Charts to display different graphs that illustrate the price variati
 crime rates.
 - The application allows the user to:
     - View the average property prices across Boston (to lease and/or buy).
-    - View the 5 most common crimes across Boston, with incident counts.
+    - View the five most common crimes across Boston, with incident counts.
     - Filter housing results using number of bedrooms.
     - Visualize the housing listings and crime distribution on a map interface, with color-coding indicating relative
     crime levels compared to the average. The darkest red color shows the area with the highest crime rate and the
@@ -145,8 +145,8 @@ crime rates.
 </p>
     
 ## Contributions Breakdown
-- **Vivin** : Back-end scaffolding code and all endpoints dealing with housing data. Setting up Nginx server to handle
-CORS and caching. Deploying back-end code on AWS EC2. Wrote Python Scripts to scrape and clean data from
+- **Vivin** : Back-end scaffolding code and all endpoints dealing with housing data. Set up Nginx server to handle
+CORS and caching. Deployed back-end code on AWS EC2. Wrote Python scripts to scrape and clean data from
 redfin.com and apartments.com. Slide for application architecture for Project Presentation. Application
 Architecture for Final Report.
 - **Matthew** : All endpoints dealing with crime data. Data normalization and MySQL Create scripts for crime data.
@@ -156,7 +156,7 @@ Conclusions for Final Report. Proofreading for all written submissions and prese
 - **Anubhuti** : Data normalization and scripts to create table for data from redfin.com and apartments.com. Services
 in React to get data from Back-end. Integrated Google Charts API for creating curve graphs and scatter plots to
 analyze the relation between crime and housing prices and created graph components in the application to display
-graphs. Color the graph indicating relative crime levels in different neighborhoods relative to the average crime
+graphs. Colored the graph indicating relative crime levels in different neighborhoods relative to the average crime
 rate across Boston. Demo in Project Presentation. User Interface section for Final Report.
 - **Ram** : Data extraction, normalization and MySQL create scripts for Airbnb data. Set up and configured the React
 project and its deployment on Heroku. Introduced Redux to manage state in the React application. Integrated
