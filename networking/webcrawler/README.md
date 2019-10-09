@@ -1,4 +1,4 @@
-# Web Crawler README
+# Webcrawler README
 
 **Team**: Johanna Gunawan (gunawan.jo@husky.neu.edu), Matthew O'Brien (obrien.matt@husky.neu.edu)
 
