@@ -22,7 +22,7 @@
 7. [Changelogs](#Changelogs)
 
 ## Project Summary
-Brian and I programmed an application for processing images in a variety of ways. The user could interact with it over the command line or a Java Swing GUI we created. The application supported a variety of filters and enabled the user to view their changes on the GUI. The application could load and save images from a user-specified directory, and run scripts written and uploaded by the user. See below for more information about program functionality.
+Brian and I programmed an application for processing images in a variety of ways. The user could interact with it over the command line or a Java Swing GUI we created. The application supported a variety of filters and enabled the user to view their changes on the GUI. The application could load and save images from a user-specified directory and run scripts written and uploaded by the user. See below for more information about program functionality.
 
 ## Program Structure
 
@@ -70,7 +70,7 @@ below for usage.
 
 ### Script Mode
 
-The program is stored as a JAR file, and can be run from the command line with the following:
+The program is stored as a JAR file and can be run from the command line with the following:
 ```bash
 $ java -jar assignment10.jar -script scriptName.txt
 ```
@@ -206,7 +206,7 @@ included undo and redo operations.
 *manhattan-small.png aka testImage.png* - taken from course website at 
 https://course.ccs.neu.edu/cs5004/assignment8.html
 
-*bananas.png* - we own this image and are authorizing it for use in the project. this image was 
+*bananas.png* - we own this image and are authorizing it for use in the project. This image was 
 submitted to meet hw8 and hw9 requirements, but is not required for this submission.
 
 *GUI_example.png* - we own this image and are authorizing it for use in the project.
@@ -219,7 +219,7 @@ submitted to meet hw8 and hw9 requirements, but is not required for this submiss
 * modified Driver.main to let users specify -script or -interactive mode when launching.
 * modified controller to implement a Features interface, to be used by the view for command 
     callbacks.
-* updated how filters are passed through the program. the controller.Filter enum is now part of the 
+* updated how filters are passed through the program. Filter enum is now part of the 
     controller instead of the model.  All three MVC components use the enum now, instead of 
     passing around strings.
 * added file extension validation to the load and save methods called in script mode, and updated 
@@ -237,7 +237,7 @@ submitted to meet hw8 and hw9 requirements, but is not required for this submiss
 ### Changelog 04/10/19
 
 * added a controller which handles top-level user commands and calls the appropriate method 
-    in its model to handle the user's request. only the first argument of each script line 
+    in its model to handle the user's request. Only the first argument of each script line 
     (the command) is validated by the controller, and then the model's methods validate all 
     arguments. This increases the modular nature of the code. See more below.
     * in addition to txt files, the controller can take any Readable object (StringReaders, stdin, 
@@ -253,14 +253,14 @@ submitted to meet hw8 and hw9 requirements, but is not required for this submiss
     * the model method that is handling a user's command is now entirely responsible for validating 
     the command's argument input (with no burden on the controller). The controller only extracts 
     individual lines from input and confirms that each line corresponds to a valid command.
-    * as a result of this restructuring, method signatures have changed. instead of model methods
+    * as a result of this restructuring, method signatures have changed. Instead of model methods
     taking in an int or boolean, for example, they will take in a list of arguments and then parse
     the values it requires from that list.
     * overall, this design makes our program more modular, as a new method can be added to the model 
-    with virtually no changes to the controller. the division of exception-handling responsibilities 
+    with virtually no changes to the controller. The division of exception-handling responsibilities 
     is also much clearer now. 
 * added a controller.Filter enum for the model, which lists all possible image editing operations 
-    available. the controller can confirm if an inputted filter command is valid by calling the 
+    available. The controller can confirm if an inputted filter command is valid by calling the 
     model's isValidFilter method, which compares input strings to the enum. This way, new image 
     processing methods can be added to the model without any edits made to the controller.
 * added method to FilterUtil that will dither an image.
@@ -268,7 +268,7 @@ submitted to meet hw8 and hw9 requirements, but is not required for this submiss
     calls to the new method.
 * added method to mosaic() an image based on a user-specified number of seed pixels.
     * created a new util class, ClusteredPixel, that keeps track of a given pixel's location
-    in the image and color channels. used exclusively in the mosaic() method.
+    in the image and color channels. Used exclusively in the mosaic() method.
     * added a case to the switch statement in FilterUtil method filterDispatch() to support 
     calls to the new method.
 * moved the image file I/O methods (loading and saving) from the model to the controller, to better 
