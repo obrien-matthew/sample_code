@@ -32,9 +32,9 @@ Where 'username' and 'password' are login credentials for '[Fakebook](http://www
 
 ## Project Summary
 
-We were tasked with building a webcrawler to search for 5 hidden keys (unique to each student ID/login username) located in the host server's domain. The webcrawler should not visit any other domains, and should never visit the same page twice. Additionally, we were responsible for building and parsing HTTP requests and responses, with the use of built-in libraries to do such tasks being prohibited.
+We were tasked with building a webcrawler to search for 5 hidden keys (unique to each student ID/login username) located in the host server's domain. The webcrawler should not visit any other domains, and should never visit the same page twice. Additionally, we were responsible for building and parsing HTTP requests and responses, with the use of built-in libraries to do such tasks prohibited.
 
-Our webcrawler runs until it either visits every page in the domain or finds the 5 hidden keys. It handles 300, 400, and 500 level HTTP responses in different ways as to most appropriately address the issue, for example refreshing the connection and trying again with 500 level errors, marking the page as visited with 400 level errors and moving on, and visiting the redirect URL with 300 level errors. It will additionally automatically refresh the connection with the server if the server indicates it would like to close the socket.
+Our webcrawler runs until it either visits every page in the domain or finds the 5 hidden keys. It handles 300, 400, and 500 level HTTP responses in different ways as to most appropriately address the issue, for example refreshing the connection and trying again with 500 level errors, marking the page as visited with 400 level errors and moving on, and visiting the redirect URL with 300 level errors. It will automatically refresh the connection with the server if the server indicates it would like to close the socket.
 
 ### Additional Info
 
