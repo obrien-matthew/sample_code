@@ -3,7 +3,7 @@
 
 These directories contain various projects and assignments I've created or otherwise contributed to. The projects are broken down into general categories: systems, networking, object-oriented design, algorithms, and databases/mysql.
 
-Additional information a given project can be found in the README located in that project's directory.
+Additional information on a given project can be found in the README located in that project's directory.
 
 Do not reuse the code without requesting permission (obrien.matt@husky.neu.edu).
 
@@ -14,7 +14,7 @@ Below is a table of contents for this library, with projects ranked in order of 
 ### Computer Networking
 
 1) Class Project: [Webcrawler](./networking/webcrawler)
-2) Class Project: [TCP & SSL Connections](./networking/tcp_ssl_client)
+2) Class Project: [TCP/SSL Client](./networking/tcp_ssl_client)
 3) Class Project: [TCP Server/Client Sockets in C](./networking/server_client_sockets)
 
 ### Object-Oriented Design
