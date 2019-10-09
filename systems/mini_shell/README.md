@@ -54,11 +54,11 @@ A betting game based on 'cup shuffling'.
 
 **DESCRIPTION**:
 
-The user starts out with $100. Each round, the program randomly chooses which 'cup' to place the 'hash' under. If the user guesses correctly, they win as much as they bet. If they lose, the lose everything they bet. After each round, the program checks to see if the user still has some money before asking if they'd like to play again. If they don't have any money, or don't want to play again, the game prints out some information regarding their performance and closes, returning control back to the shell.
+The user starts out with $100. Each round, the program randomly chooses which 'cup' to place the 'hash' under. If the user guesses correctly, they win as much as they bet. If they lose, the lose everything they bet. After each round, the program checks to see if the user still has some money before asking if they would like to play again. If they do not have any money, or do not want to play again, the game prints out some information regarding their performance and closes, returning control back to the shell.
 
 **NOTES**:
 
-I divvied up the functionality of the game into a few different functions; there's a host function that oversees the whole process, a game loop function, a drawing function (prints out the cups) and a small function to explain the rules to the user upon starting. I loaded it into minishell the same way I loaded the other built-in programs (cd, exit, help); by adding them to the builtin.h header file (which is loaded by minishell).
+I divvied up the functionality of the game into a few different functions; there is a host function that oversees the whole process, a game loop function, a drawing function (prints out the cups) and a small function to explain the rules to the user upon starting. I loaded it into minishell the same way I loaded the other built-in programs (cd, exit, help): by adding them to the builtin.h header file (which is loaded by minishell).
 
 ### Copyright
 
